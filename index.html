@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,50 @@
     <title>The Meal API</title>
     <meta name="description" content="This is a website with TheMealAPI integration for university project.">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
 </head>
+
 <body>
-<main>
-    <h1>Search for meal or get inspiration!</h1>
-</main>
+<div class="flex searchBox">
+    <div class="inspirationBox">
+        <button class="getRandomMeal">Search for inspiration</button>
+      </div>
+
+    <div class="search">
+        <h3 >
+            You know what you want to search?
+        </h3>
+        <input type="text" class="searchBar" placeholder="type name of a meal">
+        <button class="searchButton">Search</button>
+    </div>
+
+</div>
+    
+
+    <div class="warningBox hide">
+    </div>
+
+    <div id="mealCard" class="mealCard hide">
+
+        
+        <img src="" alt="" class="mealImage">
+        <h1 class="mealName"> </h1>
+        <h5 class="mealRegion"></h5>
+        <hr>
+        
+        <hr>
+        <ul class="mealIngredients__list">
+
+        </ul>
+        <hr>
+        <p class="mealInstructions">
+
+        </p>
+
+    </div>
+
+
 </body>
+
+<script src="app.js"></script>
+
 </html>

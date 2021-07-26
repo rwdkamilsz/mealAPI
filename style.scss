@@ -1,3 +1,135 @@
-main{
-    font-family:Ubuntu, sans-serif;
+body {
+  text-align: center;
+  margin: 0;
+  font-family: 'Open sans', sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+  background: #f4f4f4;
+  font-size: 1.2rem;
+  padding:.2rem;
+  backdrop-filter: blur(4px);
+  background-size:cover;
+  div,
+  span {
+    display: block;
+  }
 }
+h1,
+h2,
+h3 {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+img {
+  max-width: 90%;
+  max-height: 400px;
+}
+.hide {
+  display: none;
+}
+button {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;  
+  margin:1rem;
+  text-decoration: none;
+  background: #0069ed;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  border-radius:10px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  &:hover,
+  &:focus {
+    background: #0053ba;
+  }
+  &focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+  }
+  &:active {
+    transform: scale(0.99);
+  }
+}
+.searchBox{
+    margin:0 auto;
+    min-width:300px;
+    border-radius:10px;
+    max-width:60%;
+    background: #4d586def;
+    padding:1rem;
+    h3{
+        font-size:2rem;
+        text-shadow: 2px 2px 4px gray;
+    }
+}
+
+.mealCard {
+  background: #4d586def;
+  color: white;
+  padding: 0.5em;
+  border-radius: 30px;
+  max-width: 90%;
+  margin: 1em auto;
+  .mealIngredients__list {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  div {
+    padding: .5rem;
+  }
+  @media screen and (min-width:991px) {
+      div{
+          
+    padding: 1.5rem;
+      }
+  }
+}
+input{
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;    
+  border-radius:10px;
+    margin: 0;
+    box-shadow:0px 0px 8px 1px gray
+}
+
+.inspirationBox{
+    border-bottom:2px solid gray
+}
+
+@media (min-width: 991px) {
+    .mealCard {
+      max-width: 45%;
+    }
+    .flex{
+        flex-direction: row;
+    }
+    
+  .inspirationBox{
+      border-bottom:0;
+      border-right:2px solid gray
+  }
+  }
+  .warningBox{
+      margin:0 auto;
+      padding:.8rem;
+      min-width:300px;
+      max-width:65%;
+      border-radius:10px;
+      background:white;     
+backdrop-filter: opacity(30%);
+      color:red;
+  }
